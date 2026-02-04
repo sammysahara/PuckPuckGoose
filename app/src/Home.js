@@ -15,7 +15,7 @@ function Home(){
           </div>
           <div className="subsection-info">
             <h1 className="text-big">General Info</h1>
-            <p className="text-small">This is an NHL visualizations website made by Rowan & Sid for the independent study unit in ICS4U.</p>
+            <p className="text-small">This is an NHL visualizations website made by Rowan Malheiro & Sahara Sammy for the independent study unit in ICS4U.</p>
             <p className="text-small">The Player page contains data visualizations for NHL player analytics.</p>
             <p className="text-small">The Team page contains data visualizations for NHL team analytics.</p>
             <p className="text-small">The Misc (Miscellaneous) page contains scatterplots that illustrate NHL team analytics in comparison to other teams.</p>
