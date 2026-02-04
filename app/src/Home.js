@@ -1,5 +1,6 @@
 import * as d3 from 'd3'
 import {useEffect, useState, useRef} from 'react'
+import {Link} from "react-router-dom"
 import './css/HomePage.css'
 
 function Home(){
@@ -9,9 +10,9 @@ function Home(){
         <div className="section-head"><h1 className="text-bigger">ABOUT</h1></div>
         <div className="section">
           <div className="subsection-other">
-            <div className="nav-buttoncont"><a href="/Players" className="nav-buttons"> To Players</a></div>
-            <div className="nav-buttoncont"><a href="/Teams" className="nav-buttons" >To Teams</a></div>
-            <div className="nav-buttoncont"><a href="/Misc" className="nav-buttons">To Misc</a></div>
+            <div className="nav-buttoncont"><Link to="/Players" className="nav-buttons"> To Players</Link></div>
+            <div className="nav-buttoncont"><Link to="/Teams" className="nav-buttons" >To Teams</Link></div>
+            <div className="nav-buttoncont"><Link to="/Misc" className="nav-buttons">To Misc</Link></div>
           </div>
           <div className="subsection-info">
             <h1 className="text-big">General Info</h1>
