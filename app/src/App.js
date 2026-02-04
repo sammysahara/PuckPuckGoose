@@ -1,6 +1,6 @@
 import Navbar from './Navbar.js'
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
   Link
@@ -22,7 +22,7 @@ function App() {
         <Routes>
           <Route path = "/" element={<Home/>}></Route>
           <Route exact path = "/Players/:id" element = {<PlayerPage/>}/>
-          <Route exact path = "Teams/:team" element = {<TeamPage/>}/>
+          <Route exact path = "/Teams/:team" element = {<TeamPage/>}/>
           <Route path = "/Players" element={<Players/>}/>
           <Route path = "/Teams" element={<Teams/>}/>
           {//<Route path = "/Misc" element={<Misc/>}/>
