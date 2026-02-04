@@ -14,7 +14,7 @@ function PlayerPage(){
     const [svg, setsvg] = useState(null)
 
     const fetchShotData = (team) => {
-        fetch(`/data/${team}_shots.csv`)
+        fetch(`${process.env.PUBLIC_URL}/data/${team}_shots.csv`)
         .then((response) => response.text())
         .then((csvText) => {
             console.log(d3.csvParse(csvText)[0].shooterPlayerId)
@@ -28,7 +28,7 @@ function PlayerPage(){
         if(shotData){
             return
         }
-        fetch(`/data/skaters.csv`)
+        fetch(`${process.env.PUBLIC_URL}/data/skaters.csv`)
         .then((response) => response.text())
         .then((csvText) => {
             console.log(csvText)
