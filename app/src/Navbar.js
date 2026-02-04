@@ -3,10 +3,10 @@ import './css/index.css'
 function Navbar(){
     return(
         <div className="navbar">
-            <a href="/" className="nav-home">Home</a>
-            <a href="/Players" className="nav-option">Players</a>
-            <a href="/Teams" className="nav-option">Teams</a>
-            <a href="/Misc" className="nav-option">Misc</a>
+            <Link to="/" className="nav-home">Home</Link>
+            <Link to="/Players" className="nav-option">Players</Link>
+            <Link to="/Teams" className="nav-option">Teams</Link>
+            <Link to="/Misc" className="nav-option">Misc</Link>
         </div>
     )
 }
