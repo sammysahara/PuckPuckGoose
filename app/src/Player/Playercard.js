@@ -68,7 +68,7 @@ function Playercard(props){
 
     useEffect(() => {
         //Fetch data
-        fetch("/data/skaters.csv")
+        fetch(`${process.env.PUBLIC_URL}/data/skaters.csv`)
             .then(response => response.text())
             .then(csvString => {
                 rawData.current = d3.csvParse(csvString).filter((player) => player.situation == "5on5")
@@ -93,7 +93,9 @@ function Playercard(props){
             (
             <>
                 <div className="playercard-header">  
-                    <img src={`/logos/${playerData.team}.png`} />
+                    <img 
+                        src={`${process.env.PUBLIC_URL}/logos/${playerData.team}.png`} 
+                        alt = {`${playerData.team} logo`}/>
                     <p className="playercard-pname">{playerData.name}</p>
                     <PlayerScore percentile={percentile} key={percentile}></PlayerScore>
                 </div>
