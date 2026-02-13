@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../css/Players.css'
 import * as d3 from 'd3'
 
@@ -13,7 +13,7 @@ function Players(){
 
     //[]= runs only when the page is open for the first time, creates a list of all player names   
     useEffect(() => {
-        fetch("/data/skaters.csv")
+        fetch(`${process.env.PUBLIC_URL}/data/skaters.csv`)
             .then(response => response.text())
             .then(csvString => {
                 const rawData = d3.csvParse(csvString)
@@ -46,8 +46,8 @@ function Players(){
                 <div className='searchbarcont'>
                     <input type="text" value={playerName} onChange={e => setPlayerName(e.target.value)} placeholder='Search for player'/>
                     <div className='buttoncont'>
-                        <button onClick={luckyButton}>
-                            <img src={`/rand-dice.png`} title="Random search"/>
+                        <button type="button" onClick={luckyButton}>
+                            <img src={`${process.env.PUBLIC_URL}/rand-dice.png`} title="Random search"/>
                         </button>
                     </div> 
                 </div>              
@@ -55,14 +55,14 @@ function Players(){
                 <div className="player-selectcont">
                 {playerList.map((player, i) => {
                     if(i<52)
-                        return <a href={`/Players/${player.playerId}`}>
+                        return <Link key={player.playerId} to={`/Players/${player.playerId}`}>
                             <div className="player-select">
                                 <div className="player-imgcont">
-                                    <img src={`/logos/${player.team}.png`} alt="" className="player-img"/>
+                                    <img src={`${process.env.PUBLIC_URL}/logos/${player.team}.png`} alt="" className="player-img"/>
                                 </div>
                                 <p1 className="player-name">{player.name}</p1>
                             </div>
-                        </a>
+                        </Link>
                 })}
                 </div>
             </form>
