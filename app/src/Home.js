@@ -31,7 +31,7 @@ function Home(){
         </div>
         <div className="section">
           <div className="subsection-other">
-            <img src={`/guide-images/clicky.png`} className="userguide-img"/>
+            <img src={`${process.env.PUBLIC_URL}/guide-images/clicky.png`} className="userguide-img"/>
           </div>
           <div className="subsection-info">
             <h1 className="text-big">Navigation Bar</h1>
@@ -41,7 +41,7 @@ function Home(){
         
         <div className="section">
           <div className="subsection-other">
-            <img src={`/guide-images/searchex.png`} className="userguide-img"/>
+            <img src={`${process.env.PUBLIC_URL}/guide-images/searchex.png`} className="userguide-img"/>
           </div>
           <div className="subsection-info">
             <h1 className="text-big">Search Bar</h1>
@@ -51,7 +51,7 @@ function Home(){
         <div className="section"></div>
         <div className="section">
           <div className="subsection-other">
-            <img src={`/guide-images/dice.png`} className="userguide-img"/>
+            <img src={`${process.env.PUBLIC_URL}/guide-images/dice.png`} className="userguide-img"/>
           </div>
           <div className="subsection-info">
             <h1 className="text-big">Random Search</h1>
@@ -61,7 +61,7 @@ function Home(){
 
         <div className="section">
           <div className="subsection-other">
-            <img src={`/guide-images/player-score.png`} className="userguide-img"/>
+            <img src={`${process.env.PUBLIC_URL}/guide-images/player-score.png`} className="userguide-img"/>
           </div>
           <div className="subsection-info">
             <h1 className="text-big">Player Scores</h1>
@@ -71,7 +71,7 @@ function Home(){
 
         <div className="section">
           <div className="subsection-other">
-            <img src={`/guide-images/team-score.png`} className="userguide-img"/>
+            <img src={`${process.env.PUBLIC_URL}/guide-images/team-score.png`} className="userguide-img"/>
           </div>
           <div className="subsection-info">
             <h1 className="text-big">Team Scores</h1>
@@ -81,7 +81,7 @@ function Home(){
 
         <div className="section">
           <div className="subsection-other">
-            <img src={`/guide-images/player-bars.png`} className="userguide-img"/>
+            <img src={`${process.env.PUBLIC_URL}/guide-images/player-bars.png`} className="userguide-img"/>
           </div>
           <div className="subsection-info">
             <h1 className="text-big">Player Bar Graphs</h1>
@@ -91,7 +91,7 @@ function Home(){
 
         <div className="section">
           <div className="subsection-other">
-            <img src={`/guide-images/team-bars.png`} className="userguide-img"/>
+            <img src={`${process.env.PUBLIC_URL}/guide-images/team-bars.png`} className="userguide-img"/>
           </div>
           <div className="subsection-info">
             <h1 className="text-big">Team Bar Graphs</h1>
@@ -122,7 +122,7 @@ function Home(){
 
         <div className="section">
           <div className="subsection-other">
-            <img src={`/guide-images/player-shotmaps.png`} className="userguide-img"/>
+            <img src={`${process.env.PUBLIC_URL}/guide-images/player-shotmaps.png`} className="userguide-img"/>
           </div>
           <div className="subsection-info">
             <h1 className="text-big">Player Shotmaps</h1>
@@ -132,8 +132,8 @@ function Home(){
 
         <div className="section">
           <div className="subsection-other">
-            <img src={`/guide-images/teamheat1.png`} className="userguide-img"/>
-            <img src={`/guide-images/teamheat2.png`} className="userguide-img"/>
+            <img src={`${process.env.PUBLIC_URL}/guide-images/teamheat1.png`} className="userguide-img"/>
+            <img src={`${process.env.PUBLIC_URL}/guide-images/teamheat2.png`} className="userguide-img"/>
           </div>
           <div className="subsection-info">
             <h1 className="text-big">Team Shotmaps</h1>
@@ -143,7 +143,7 @@ function Home(){
 
         <div className="section">
           <div className="subsection-other">
-            <img src={`/guide-images/misc.png`} className="userguide-img"/>
+            <img src={`${process.env.PUBLIC_URL}/guide-images/misc.png`} className="userguide-img"/>
           </div>
           <div className="subsection-info">
             <h1 className="text-big">Scatterplots</h1>
